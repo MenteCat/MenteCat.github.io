@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-primary: "Source Sans Pro", sans-serif;
+  --ff-secondary: "Source Code Pro", monospace;
+  --fw-reg: 300;
+  --fw-bold: 900;
+
+  --clr-light: #fff;
+  --clr-dark: #303030;
+  --clr-accent: #16e0bd;
+
+  --fs-h1: 48px;
+  --fs-h2: 36px;
+  --fs-h3: 20px;
+  --fs-body: 16px;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --fs-h1: 72px;
+    --fs-h2: 60px;
+    --fs-h3: 24px;
+    --fs-body: 18px;
+  }
+}
