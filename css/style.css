@@ -13,6 +13,7 @@
   --clr-light: #fff;
   --clr-dark: #303030;
   --clr-accent: #fbd901;
+  --clr-biggerWords: #fcc1bf;
 
   --fs-h1: 48px;
   --fs-h2: 36px;
@@ -55,11 +56,35 @@ strong {
   font-weight: var(--fw-bold);
 }
 
+:focus {
+  outline: 3px solid var(--clr-biggerWords);
+  outline-offset: 3px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  background: var(--clr-biggerWords);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 12.8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
 /* Typography */
 h1,
 h2,
 h3 {
-  line-height: 1.1;
+  line-height: 1;
   margin: 0;
 }
 /* this setting up makes possible for the fonts to adapt to the window's size */
@@ -74,7 +99,7 @@ h3 {
 }
 
 .section__title {
-  margin-bottom: 0.25em;
+  margin-bottom: 4px;
 }
 
 .section__title--intro {
@@ -141,5 +166,53 @@ nav {
     position: relative;
     left: -24px;
     width: calc(100% + 24px);
+  }
+}
+
+/* Tech stack */
+
+.tech-stack {
+  background-color: var(--clr-dark);
+  background-image: url(../img/full_background.jpg);
+  background-size: cover;
+  background-blend-mode: hard-light;
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__title--skillset {
+  color: var(--clr-biggerWords);
+  position: relative;
+}
+
+.section__title--skillset::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  margin: 8px auto 16px;
+  background: var(--clr-light);
+  opacity: 0.5;
+}
+
+.skillset {
+  margin-bottom: 64px;
+}
+
+.skills {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .skillset {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skills + .skills {
+    margin-left: 32px;
   }
 }
