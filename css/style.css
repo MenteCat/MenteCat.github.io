@@ -124,7 +124,7 @@ h3 {
 }
 
 .section__subtitle--project {
-  color: var(--clr-accent);
+  color: var(--clr-biggerWords);
   font-weight: var(--fw-bold);
   margin-bottom: 32px;
 }
@@ -273,7 +273,7 @@ nav {
 }
 
 .portfolio__item {
-  background: var(--clr-accent);
+  background: var(--clr-biggerWords);
   overflow: hidden;
 }
 
@@ -296,7 +296,7 @@ nav {
 
 .footer {
   background: #111;
-  color: var(--clr-accent);
+  color: var(--clr-biggerWords);
   text-align: center;
   padding: 40px 0;
   font-weight: var(--fw-bold);
@@ -328,9 +328,10 @@ nav {
 }
 
 .social-list__item {
-  margin: 0 8px;
+  margin: 0 16px;
+  font-size: var(--fs-h3);
 }
 
 .social-list__link {
-  padding: 8px;
+  padding: 16px;
 }
