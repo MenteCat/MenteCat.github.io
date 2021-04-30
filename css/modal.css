@@ -44,10 +44,21 @@
 }
 
 .contactform {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
   padding: 10px 0;
+}
+
+.id {
+  display: inline-block;
+}
+
+.subject {
+  display: inline-block;
+  position: relative;
 }
 
 .name {
@@ -69,7 +80,14 @@
 }
 
 .send {
-  display: flex;
+  position: relative;
   order: 4;
   padding: 10px 0;
+}
+.label {
+  padding-right: 53px;
+}
+
+.label-large {
+  padding-right: 25px;
 }
