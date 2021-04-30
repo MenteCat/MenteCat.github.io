@@ -24,7 +24,7 @@
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: var(--clr-biggerWords);
   float: right;
   font-size: 28px;
   font-weight: bold;
@@ -32,9 +32,10 @@
 
 .close:hover,
 .close:focus {
-  color: black;
+  color: var(--clr-biggerWords);
   text-decoration: none;
   cursor: pointer;
+  opacity: 0.7;
 }
 
 .modal-text {
@@ -49,19 +50,19 @@
   padding: 10px 0;
 }
 
-.firstitem {
+.name {
   display: flex;
   order: 1;
   padding: 10px 0;
 }
 
-.seconditem {
+.email {
   display: flex;
   order: 2;
   padding: 10px 0;
 }
 
-.thirditem {
+.message {
   display: flex;
   order: 3;
   padding: 10px 0;
