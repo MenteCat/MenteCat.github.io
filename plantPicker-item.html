@@ -36,9 +36,8 @@
       };
     </script>
 
-    <!-- modal JS -->
-
-    
+    <!-- modal -->
+    <link rel="stylesheet" href="css/modal.css" />
     <!-- Normalize CSS aims to make built-in browser styling consistent across browsers  -->
     <link
       rel="stylesheet"
@@ -66,15 +65,15 @@
       <nav class="nav">
         <!-- the double underscore in the nav__list indicates that is a sub-class -->
         <ul class="nav__list">
-          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="/index.html#home" class="nav__link">Home</a></li>
           <li class="nav__item">
-            <a href="#skillset" class="nav__link">Tech Stack</a>
+            <a href="/index.html#skillset" class="nav__link">Tech Stack</a>
           </li>
           <li class="nav__item">
-            <a href="#about" class="nav__link">About me</a>
+            <a href="index.html#about" class="nav__link">About me</a>
           </li>
           <li class="nav__item">
-            <a href="#projects" class="nav__link">Projects</a>
+            <a href="index.html#projects" class="nav__link">Projects</a>
           </li>
         </ul>
       </nav>
@@ -107,52 +106,80 @@
         earum?
       </p>
     </div>
-
-  <!-- Footer -->
-    <footer class="footer">
-      <div class="container">
-
-        <!-- form -->
-        <form id="contact-form">
-          <input type="hidden" name="contact_number" />
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Message</label>
-          <textarea name="message"></textarea>
-          <input type="submit" value="Send" />
-        </form>
-      <!-- end form -->
-
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://www.linkedin.com/in/concetta-iuso/"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin"></i>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://github.com/MenteCat"
-            target="_blank"
-            ><i class="fab fa-github-square"></i
-          ></a>
-        </li>
-        <li class="social-list__item">
-          <a
-            class="social-list__link"
-            href="https://www.instagram.com/tinaiuso/"
-            target="_blank"
-            ><i class="fab fa-instagram-square"></i
-          ></a>
-        </li>
-      </ul>
-    </footer>
-    <script src="js/index.js"></script>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+    
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn" class="btn">Contact me!</button>
+            <!-- The Modal -->
+          <div id="myModal" class="modal">
+    
+              <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+                <!-- form -->
+                <h3>ABOUT YOU</h3>
+                <form id="contact-form" class="modal-text contactform">
+                  <input type="hidden" name="contact_number"/>
+    
+                    <div class="id">
+                      <div class="name">
+                        <label class="label">Name</label>
+                        <input type="text" name="user_name"/>
+                      </div>
+                      <div class="email">
+                        <label class="label">Email</label>
+                        <input type="email" name="user_email" class="box"/>
+                      </div>
+                   </div>
+    
+                   <div class="subject">
+                      <div class="message">
+                        <label class="label-large">Message</label>
+                        <textarea name="message"></textarea>
+                      </div>
+                      <div class="send">
+                        <input type="submit" value="Send" class="btn"/>
+                      </div>
+                  </div>
+    
+                </form> 
+              <!-- end form -->
+            </div>
+          </div>
+            <script src="js/index.js"></script>
+            <!-- close modal -->
+    
+            <!-- social icons -->
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                href="https://www.linkedin.com/in/concetta-iuso/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                href="https://github.com/MenteCat"
+                target="_blank"
+                ><i class="fab fa-github-square"></i
+              ></a>
+            </li>
+            <li class="social-list__item">
+              <a
+                class="social-list__link"
+                href="https://www.instagram.com/tinaiuso/"
+                target="_blank"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </li>
+          </ul>
+          <!-- end social icons -->
+        </footer>
   </body>
 </html>
